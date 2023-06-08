@@ -1,0 +1,158 @@
+"" Source your .vimrc
+"source ~/.vimrc
+
+"" -- Suggested options --
+" Show a few lines of context around the cursor. Note that this makes the
+" text scroll if you mouse-click near the start or end of the window.
+set scrolloff=5
+set clipboard+=unnamed
+set relativenumber
+set hlsearch
+set matchpairs
+set showmode
+set showcmd
+set notimeout
+" Do incremental searching.
+set incsearch
+set sneak
+set keep-english-in-normal
+set which-key
+let g:WhichKey_FontFamily = 'Liga SFMono Nerd Font'
+let g:WhichKey_FontSize = 16
+let g:WhichKey_SortOrder = "by_description"
+let mapleader = ' '
+nnoremap <leader>sv :source ~/.ideavimrc<cr>
+Plug 'preservim/nerdtree' 
+Plug 'vim-commentary'
+let g:WhichKeyDesc_com = "gc"
+"vmap <C-c> "+yi
+"vmap <C-x> "+c
+"vmap <C-v> c<ESC>"+p
+"imap <C-v> <C-r><C-o>+
+map <c-\> <Action>(Terminal.OpenInTerminal)
+nmap K <Action>(QuickJavaDoc)
+" Find more examples here: https://jb.gg/share-ideavimrc
+" Don't use Ex mode, use Q for formatting.
+map Q gq
+
+"Close current buffer"
+nmap <leader>c <Action>(CloseContent)
+let g:WhichKeyDesc_Close = "<leader>c Close buffer"
+
+"" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
+
+"Nerdtree"
+nmap <leader>e :NERDTreeToggle<CR>
+let g:WhichKeyDesc_Nerdtree = "<leader>e NERDTree"
+
+"Buffers
+let g:WhichKeyDesc_Window = "<leader>b Buffers"
+map <leader>bn <Action>(NextTab)
+let g:WhichKeyDesc_Window_NTab = "<leader>bn Next tab"
+map <leader>bb <Action>(PreviousTab)
+let g:WhichKeyDesc_Window_PTab = "<leader>bb Previous tab"
+nmap <leader>bh <Action>(CloseAllToTheLeft)
+let g:WhichKeyDesc_Window_Closeh = "<leader>bh Close all to the left"
+nmap <leader>bl <Action>(CloseAllToTheRight)
+let g:WhichKeyDesc_Window_Closel = "<leader>bl Close all to the right"
+nmap <leader>bx <Action>(CloseAllEditorsButActive)
+let g:WhichKeyDesc_Window_Closex = "<leader>bx Close all but active"
+nmap <leader>br <Action>(ReopenClosedTab)
+let g:WhichKeyDesc_Window_Reopen = "<leader>br Reopen last closed"
+nmap <leader>bs <Action>(SplitVertically)
+let g:WhichKeyDesc_Window_Split = "<leader>bs Split vertically"
+nmap <leader>bu <Action>(Unsplit)
+let g:WhichKeyDesc_Window_Unsplit = "<leader>bu Unsplit"
+nmap <leader>bc <Action>(HideAllWindows)
+let g:WhichKeyDesc_Window_Hide = "<leader>bc Hide all windows"
+"nnoremap <leader>ww <c-w>w
+"let g:WhichKeyDesc_Window_Switch = "<leader>ww Switch Split"
+
+"Run"
+let g:WhichKeyDesc_Run = "<leader>r Run"
+map <leader>rr <Action>(Run)
+let g:WhichKeyDesc_Run_Run = "<leader>rr Run"
+map <leader>rc <Action>(ChooseRunConfiguration)
+let g:WhichKeyDesc_Run_Choose = "<leader>rc Choose run configuration"
+map <leader>rs <Action>(Stop)
+let g:WhichKeyDesc_Run_Stop = "<leader>rs Stop"
+
+"Debug"
+let g:WhichKeyDesc_Debug = "<leader>d Debug"
+map <leader>dd <Action>(Debug)
+let g:WhichKeyDesc_Debug_Debug = "<leader>dd Debug"
+map <leader>dc <Action>(ChooseDebugConfiguration)
+let g:WhichKeyDesc_Debug_Choose = "<leader>dc Choose debug configuration"
+map <leader>dt <Action>(ToggleLineBreakpoint)
+let g:WhichKeyDesc_Debug_Toggle = "<leader>dt Toggle breakpoint"
+map <leader>ds <Action>(Stop)
+let g:WhichKeyDesc_Debug_Stop = "<leader>ds Stop"
+nmap <leader>dr <Action>(Debugger.RemoveAllBreakpoints)
+let g:WhichKeyDesc_Debug_Remove_All = "<leader>dr Remove all breakpoints"
+nmap <leader>dv <Action>(ViewBreakpoints)
+let g:WhichKeyDesc_Debug_v = "<leader>dv View breakpoints"
+
+"Show"
+let g:WhichKeyDesc_Show = "<leader>s Show"
+nmap <leader>su <Action>(FindUsages)
+let g:WhichKeyDesc_Show_us = "<leader>su Show usages"
+nmap <leader>sl <Action>(RecentLocations)
+let g:WhichKeyDesc_Show_lo = "<leader>sl Recent locations"
+"map <leader>sr <Action>(GotoRelated)
+"let g:WhichKeyDesc_Show_rel = "<leader>sr Goto Related"
+nmap <leader>sd <Action>(QuickJavaDoc)
+let g:WhichKeyDesc_Show_doc = "<leader>sd Documentation"
+nmap <leader>se <Action>(ShowErrorDescription)
+let g:WhichKeyDesc_Show_er = "<leader>se Error description"
+nmap <leader>sa <Action>(GotoAction)
+let g:WhichKeyDesc_Show_ac = "<leader>sa Actions"
+nmap <leader>sf <Action>(RecentFiles)
+let g:WhichKeyDesc_Show_fi = "<leader>sf Recent files"
+nmap <leader>sc <Action>(RecentChangedFiles)
+let g:WhichKeyDesc_Show_sc = "<leader>sc Recent changed files"
+
+let g:WhichKeyDesc_Go = "<leader>g Go"
+nmap <leader>gb <Action>(Back)
+let g:WhichKeyDesc_Go_b = "<leader>gb Go back"
+nmap <leader>gd <Action>(GotoDeclaration)
+let g:WhichKeyDesc_Go_d = "<leader>gd Go to declaration"
+nmap <leader>ge <Action>(JumpToLastChange)
+let g:WhichKeyDesc_Go_e = "<leader>ge Go to last change"
+nmap <leader>gf <Action>(Forward)
+let g:WhichKeyDesc_Go_f = "<leader>gf Go forward"
+nmap <leader>gi <Action>(GotoImplementation)
+let g:WhichKeyDesc_Go_i = "<leader>gi Go to implementation"
+nmap <leader>gj <Action>(GotoClass)
+let g:WhichKeyDesc_Go_j = "<leader>gj Go to class"
+nmap <leader>gm <Action>(MethodDown)
+let g:WhichKeyDesc_Go_m = "<leader>gm Go to next method"
+nmap <leader>gp <Action>(GotToSuperMethod)
+let g:WhichKeyDesc_Go_p = "<leader>gp Go to super method"
+nmap <leader>gt <Action>(GotoTest)
+let g:WhichKeyDesc_Go_t = "<leader>gt Go to test"
+nmap <leader>gu <Action>(MethodUp)
+let g:WhichKeyDesc_Go_u = "<leader>gu Go to previous method"
+nmap <leader>gw <Action>(GotoPreviousError)
+let g:WhichKeyDesc_Go_w = "<leader>gw Go to previous error"
+nmap <leader>gx <Action>(GotoNextError)
+let g:WhichKeyDesc_Go_x = "<leader>gx Go to next error"
+
+"Fold"
+let g:WhichKeyDesc_Folding = "<leader>z Folding"
+nmap <leader>zc <Action>(CollapseRegion)
+let g:WhichKeyDesc_Folding_c = "<leader>zc Collapse Region"
+nmap <leader>ze <Action>(ExpandRegion)
+let g:WhichKeyDesc_Folding_e = "<leader>ze Expand Region"
+nmap <leader>zd <Action>(CollapseAllRegions)
+let g:WhichKeyDesc_Folding_C = "<leader>zd Collapse All Regions"
+nmap <leader>zf <Action>(ExpandAllRegions)
+let g:WhichKeyDesc_Folding_E = "<leader>zf Expand All Regions"
+
+"Find and replace"
+let g:WhichKeyDesc_Find = "<leader>f Find and Replace"
+nmap <leader>fr <Action>(Replace)
+let g:WhichKeyDesc_Find_rep = "<leader>fr Replace"
+nmap <leader>ff <Action>(SearchEverywhere)
+let g:WhichKeyDesc_Find_find = "<leader>ff Search Everywhere"
+nmap <leader>fp <Action>(FindInPath)
+let g:WhichKeyDesc_Find_findp = "<leader>fp Find in Path"
