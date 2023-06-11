@@ -1,0 +1,844 @@
+/** EWW.SCSS
+Created by saimoom **/
+*{
+	all: unset;
+	font-family: feather;
+	font-family: Inter Nerd Font;
+}
+
+$background: #1e1e2e;
+$widget-background: #585b70;
+$shadow:    rgba(30, 30, 46, 0.4);
+$grey:      #45475a;
+$bg:        #1e1e2e;
+$black:     #313244;
+$red:       #f38ba8;
+$green:     #a6e3a1;
+$orange:    #fab387;
+$yellow:    #f9e2af;
+$blue:      #89b4fa;
+$purple:    #cba6f7;
+$pink:      #f5c2e7;
+$teal:      #94e2d5;
+$white:     #cdd6f4;
+
+/** General **/
+.bar_class {
+    background-color: rgba(30,30,46, 0.65);
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 2;
+    border-color: $blue;
+}
+.module {
+    margin: 0px 0px 0px 0px;
+    border-radius: 10px 10px 0px 10px;
+}
+
+.rightside{
+    background-color: $background;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 2;
+    border-color: $green;
+    padding: 0px 30px 0px 30px;
+}
+
+.leftside{
+    background-color: $background;
+    border-radius: 16px;
+    border-style: solid;
+    border-width: 2;
+    border-color: $green;
+    padding: 0px 30px 0px 30px;
+}
+
+.center_modules {
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
+}
+
+/** tooltip!! **/
+tooltip.background {
+    background-color: rgba(30,30,46,0.8);
+    font-size: 18;
+    border-radius: 10px;
+    border: 2px solid $blue;
+    color: $white;
+}
+
+tooltip label {
+    margin: 6px;
+}
+
+
+/** Widgets **/
+
+.clock_date_class {
+    font-size: 26;
+    font-weight: bold;
+    margin: 0px 16px 0px 10px;
+    color: $teal;
+}
+
+.clock_time_class {
+    color: $blue;
+    font-size: 26;
+    font-weight: bold;
+    margin: 0px 16px 0px 10px;
+}
+
+.notif_button {
+    font-size: 28;
+    margin: 0px 20px 0px 0px;
+    color: $white;
+}
+
+.membar {
+  color: $orange;
+    background-color: $grey;
+  border-radius: 10px;
+}
+.batbar {
+  color: $green;
+    background-color: $grey;
+  border-radius: 10px;
+}
+.cpubar {
+  color: $blue;
+    background-color: $grey;
+  border-radius: 10px;
+}
+
+.bright_icon {
+    font-size: 22;
+    color: $yellow;
+  margin: 0px 16px 0px 0px;
+}
+.brightbar trough highlight {
+  background-image: linear-gradient(to right, $orange 30%, #f2cdcd 50%, $orange 100% *50);
+  border-radius: 10px;
+}
+.volbar trough highlight {
+  background-image: linear-gradient(to right, #afcee0 30%, #92B6F4 50%, #77a5bf 100% *50);
+  border-radius: 10px;
+}
+.volume_icon {
+    font-size: 22;
+    color: $blue;
+  margin: 0px 20px 0px 0px;
+}
+
+
+.module_essid {
+    font-size: 18;
+    color: $purple;
+  margin: 0px 5px 0px 0px;
+}
+.module-wif {
+    font-size: 22;
+    color: $purple;
+  margin: 0px 16px 0px 5px;
+}
+
+.module_speed {
+  font-size: 18;
+  color: $orange;
+  margin: 0px 5px 0px 0px;
+}
+
+.module_sp {
+    font-size: 22;
+    color: $orange;
+  margin: 0px 16px 0px 5px;
+}
+
+.module_update {
+  font-size: 18;
+  color: $teal;
+  margin: 0px 5px 0px 0px;
+}
+
+.module_up {
+    font-size: 24;
+    color: $teal;
+  margin: 0px 5px 0px 0px;
+}
+
+
+.iconlauncher {
+    color: $blue;
+    font-size: 26px;
+    margin: 0px 8px 0px 15px;
+}
+
+.iconsearch {
+    color: $white;
+    font-size: 24px;
+}
+.iconmem {
+    color: $orange;
+}
+.iconbat {
+    color: $green;
+}
+.iconcpu {
+  color: $blue;
+}
+.iconbat, .iconmem, .iconcpu {
+    font-size: 12;
+    margin: 10px;
+}
+
+.power_button {
+  color: $purple;
+  margin-right: 10px;
+  font-size: 22;
+}
+
+
+.separ {
+    color: $grey;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 0px 8px 0px 8px;
+  }
+
+.launcher_module {
+    background-color: rgba(00, 00, 00, 0.0);
+  }
+.mem_module {
+    background-color: rgba(00, 00, 00, 0.0);
+	border-radius: 16px;
+  margin: 0px 10px 0px 3px;
+  }
+.bat_module {
+    background-color: rgba(00, 00, 00, 0.0);
+	border-radius: 16px;
+  margin: 0px 10px 0px 3px;
+  }
+
+.cpu_module {
+    background-color: rgba(00, 00, 00, 0.0);
+	border-radius: 16px;
+  margin: 0px 10px 0px 10px;
+  }
+
+scale trough {
+  all: unset;
+  background-color: #22242b;
+  box-shadow: 0 2px 3px 2px #06060b;
+  border-radius: 16px;
+  min-height: 10px;
+  min-width: 70px;
+  margin: 0px 10px 0px 0px;
+}
+
+.works {
+font-size: 24px;
+font-weight: normal;
+margin: 5px 0px 0px 10px;
+background-color: rgba(00, 00, 00, 0.0);
+}
+
+@keyframes spin {
+  to { -gtk-icon-transform: rotate(1turn); }
+}
+
+.0 , .01, .02, .03, .04, .05, .06, .07, .08, .09, .010,
+.011, .022, .033, .044, .055, .066, .077, .088, .099, .01010{
+  margin: 0px 2px 0px 2px;
+  font-size: 24px;
+}
+.1 , .111, .112, .113, .114, .115, .116, .117, .118, .119, .1110,
+.11111, .11212, .11313, .11414, .111515, .11616, .11717, .11818, .11919, .12020{
+  margin: 0px 2px 0px 2px;
+  font-size: 24px;
+}
+
+/* Unoccupied */
+.0, .1 {
+color: $teal;
+}
+
+/* Occupied */
+.01, .02, .03, .04, .05, .06, .07, .08, .09, .010,
+.111, .112, .113, .114, .115, .116, .117, .118, .119, .120
+{
+  color: $purple;
+}
+
+/* Focused */
+.011, .022, .033, .044, .055, .066, .077, .088, .099, .01010,
+.11111, .11212, .11313, .11414, .111515, .11616, .11717, .11818, .11919, .12020{
+  color: $yellow;
+}
+
+
+.song_cover_art {
+	background-size: cover;	
+	background-position: center;
+	min-height: 24px;
+	min-width: 30px;
+	margin: 4px 8px;
+	border-radius: 50%;
+}
+
+.song {
+	color: $blue;
+	font-size : 18px;
+	font-weight : bold;
+	margin : 3px 5px 0px 0px;
+}
+
+.song_btn_play {
+	color: $blue;
+	font-size : 28px;
+	margin : 3px 0px 0px 5px;
+
+}
+
+
+.song_btn_prev, .song_btn_next {
+	color: $blue;
+	font-size : 24px;
+	margin : 3px 0px 0px 5px;
+
+}
+// Calendar
+.cal {
+  background-color: rgba(30, 30, 46, 0.85);
+  border-radius: 10px;
+  border: 2px solid $blue;
+  font-family: Inter Nerd Font;
+  font-size: 18px;
+  font-weight: normal;
+
+.cal-in {
+    padding: 10px 20px 10px 20px;
+    color: #bfc9db;
+
+.cal {
+     &.highlight {
+          padding: 20px;
+      }
+
+      padding: 5px 5px 5px 5px;
+      margin-left: 10px;
+    }
+  }
+}
+
+calender {
+    color: #bfc9db;
+}
+calendar:selected {
+  color: $blue;
+}
+
+calendar.header {
+color: $blue;
+font-weight: bold;
+}
+
+calendar.button {
+color: $green;
+}
+
+calendar.highlight {
+color: $blue;
+font-weight: bold;
+}
+
+calendar:indeterminate {
+color: #bfc9db;
+}
+
+
+
+.sys_sep {
+    color: $grey;
+    font-size: 18;
+    margin: 0px 10px 0px 10px;
+}
+.sys_text_bat_sub, .sys_text_mem_sub, .sys_text_cpu_sub {
+    font-size: 16;
+    color: #bbc5d7;
+    margin: 5px 0px 0px 25px;
+}
+.sys_text_bat, .sys_text_mem, .sys_text_cpu {
+    font-size: 21;
+    font-weight: bold;
+    margin: 14px 0px 0px 25px;
+}
+.sys_icon_bat, .sys_icon_mem, .sys_icon_cpu {
+    font-size: 30;
+    margin: 30px;
+}
+.sys_win {
+    background-color: rgba(30, 30, 46, 0.85);
+    border: 2px solid $blue;
+    border-radius: 16px;
+}
+.sys_bat {
+  color: $green;
+    background-color: $grey;
+  border-radius: 10px;
+}
+.sys_mem {
+  color: #F1FA8C;
+    background-color: $grey;
+  border-radius: 10px;
+}
+.sys_cpu {
+  color: $blue;
+    background-color: $grey;
+  border-radius: 10px;
+}
+.sys_icon_bat, .sys_text_bat {
+    color: $green;
+}
+.sys_icon_mem, .sys_text_mem {
+    color: $orange;
+}
+.sys_icon_cpu, .sys_text_cpu {
+    color: $blue;
+}
+
+.sys_bat_box {
+	border-radius: 16px;
+    margin: 15px 10px 10px 20px;
+  }
+.sys_mem_box {
+	border-radius: 16px;
+    margin: 15px 10px 15px 20px;
+  }
+
+.sys_cpu_box {
+	border-radius: 16px;
+    margin: 15px 10px 15px 20px;
+  }
+
+
+.app-name {
+	color: $white;
+	font-size : 20px;
+  font-weight: bold;
+	margin : 3px 0px 0px 0px;
+}
+
+.app-icon {
+	margin : 3px 10px 0px 0px;
+}
+
+.app-button {
+	color: $blue;
+	font-size : 24px;
+	font-weight : bold;
+	margin : 0px 15px 0px 15px;
+}
+
+.audio-box {
+    background-color: rgba(30, 30, 46, 0.85);
+  border: 2px solid $blue;
+	border-radius: 16px;
+}
+.speaker_icon {
+	background-size: cover;
+    background-image: url('images/speaker.png');
+	background-position: center;
+	min-height: 70px;
+	min-width: 75px;
+	margin: 10px 20px 5px 20px;
+	border-radius: 12px;
+}
+
+.speaker_text {
+	color: $blue;
+	font-size : 26px;
+	font-weight : bold;
+	margin: 20px 0px 0px 0px;
+}
+
+.speaker_bar scale trough highlight {
+	all: unset;
+    background-image: linear-gradient(to right, #afcee0 30%, #92B6F4 50%, #77a5bf 100% *50);
+	border-radius: 24px;
+}
+.speaker_bar scale trough {
+	all: unset;
+	background-color: #1e1e2e;
+  border: 2px solid $blue;
+    // box-shadow: 0 6px 5px 2px #06060b;
+	border-radius: 24px;
+	min-height: 13px;
+	min-width: 120px;
+	margin : 0px 0px 5px 0px;
+}
+
+
+
+
+.mic_icon {
+	background-size: cover;
+    background-image: url('images/mic.png');
+	background-position: center;
+	min-height: 70px;
+	min-width: 75px;
+	margin: 20px 20px 20px 20px;
+	border-radius: 12px;
+}
+
+.mic_text {
+	color: $blue;
+	font-size : 26px;
+	font-weight : bold;
+	margin: 0px 0px 0px 0px;
+}
+
+.mic_bar scale trough highlight {
+	all: unset;
+    background-image: linear-gradient(to right, #afcee0 30%, #92B6F4 50%, #77a5bf 100% *50);
+	border-radius: 24px;
+}
+.mic_bar scale trough {
+	all: unset;
+  border: 2px solid $blue;
+    // box-shadow: 0 6px 5px 2px #06060b;
+	background-color: #1e1e2e;
+	border-radius: 24px;
+	min-height: 13px;
+	min-width: 120px;
+	margin : 0px 0px 20px 0px;
+}
+
+.audio_sep {
+    color: #38384d;
+    font-size: 18;
+	margin : 0px 0px 0px 0px;
+}
+
+
+// Music
+.music-player {
+	all: unset;
+  background-color: $widget-background;
+	padding: 0px 25px 0px 17px;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 2;
+  border-color: $red;
+}
+
+.music_pop {
+  background-color: rgba(30, 30, 46, 0.85);
+	border-radius: 16px;
+  border: 2px solid $blue;
+}
+
+.music_cover_art {
+	background-size: cover;
+	background-position: center;
+	min-height: 100px;
+  box-shadow: 5px 5px 5px 5px $background;
+	min-width: 170px;
+	margin: 20px;
+	border-radius: 20px;
+}
+
+.music {
+	color: $blue;
+	font-size : 20px;
+	font-weight : bold;
+	margin : 20px 0px 0px -15px;
+}
+
+.music_artist {
+	color: #bbc5d7;
+	font-size : 16px;
+	font-weight : normal;
+	margin : 0px 0px 0px 0px;
+}
+
+.album_art {
+	background-size: cover;
+	background-position: center;
+	border-radius: 12px;
+	margin: 2rem 1rem 1.5rem 1rem;
+	padding: 4rem;
+}
+
+.song {
+	font-weight: bold;
+	color: $white;
+	font-size : 1.2em;
+}
+.artist {
+	font-style: italic;
+	font-size: 1.1em;
+	color: $blue;
+	margin-top: -5px;
+}
+.btn_prev, .btn_play, .btn_next {
+  color: $purple;
+  font-size: 25px;
+}
+
+.music_btn_prev, .music_btn_play, .music_btn_next {
+	font-family: Inter Nerd Font;
+}
+.music_btn_prev {
+	color: $blue;
+	font-size : 32px;
+	font-weight : normal;
+	margin: 0px 0px 0px 0px;
+}
+.music_btn_play {
+	color: $blue;
+	font-size : 48px;
+	font-weight : normal;
+	margin: 0px 0px 0px 0px;
+}
+.music_btn_next {
+	color: $blue;
+	font-size : 32px;
+	font-weight : normal;
+	margin: 0px 0px 0px 0px;
+}
+
+.music_bar scale trough highlight {
+	all: unset;
+    background-image: linear-gradient(to right, #afcee0 30%, #92B6F4 50%, #77a5bf 100% *50);
+	border-radius: 24px;
+  // margin-left: 1px;
+}
+.music_bar scale trough {
+	all: unset;
+	background-color: #1e1e2e;
+  border: 2px solid $blue;
+  box-shadow: 0 2px 5px 2px #1e1e2e;
+	border-radius: 24px;
+	min-height: 13px;
+	min-width: 190px;
+	margin : -10px 10px 20px 0px;
+}
+
+.metric-player  scale trough highlight {
+	all: unset;
+	border-radius: 10px;
+	background-color: $blue;
+}
+
+// weather
+.weather {
+  all: unset;
+  background-color: $widget-background;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 2;
+  border-color: $red;
+  padding: 23px 37px 20px 37px;
+}
+
+.iconweather {
+	font-size : 44px;
+	font-weight : normal;
+	margin : 0px -5px  0px 20px;
+}
+
+.label_temp {
+	color : $blue;
+	font-size : 35px;
+	font-weight : bold;
+	margin : 0px 0px 0px 0px;
+  font-family: Furamono Nerd Font;
+
+}
+
+.label_stat {
+	color : $blue;
+	font-size : 38px;
+	font-weight : bold;
+}
+
+.label_quote {
+	color : $blue;
+	font-size : 18px;
+  padding-bottom: 10px;
+	font-weight : normal;
+}
+
+.date {
+    all: unset;
+    background-color: $widget-background;
+    padding: 33px 27px 27px 27px;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 2;
+  border-color: $red;
+    color: $blue;
+	font-size : 18px;
+	font-style : italic;
+	font-family: Cartograph CF;
+}
+
+.stats-box {
+    all: unset;
+    background-color: $widget-background;
+    padding: 20px 25px 20px 25px;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 2;
+  border-color: $red;
+}
+
+.stats-icon {
+    font-size: 23px;
+    color: $blue;
+}
+
+
+scale trough {
+  all: unset;
+  background-color: $widget-background;
+  box-shadow: 0 2px 3px 2px $shadow;
+  border-radius: 16px;
+  min-height: 10px;
+  min-width: 70px;
+  margin: 0px 5px 0px 10px;
+}
+
+.scale highlight {
+    background-image: linear-gradient(to right, #afcee0 30%, #92B6F4 50%, #77a5bf 100% *50);
+    border-radius: 15px;
+}
+
+.foo {
+    font-size: 40px;
+    padding-top: 10px;
+}
+
+.buttons {
+    opacity: 1;
+    background-color: $widget-background;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 2;
+  border-color: $red;
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 30px;
+}
+
+.poweroff, .reboot, .firmware, .exit, .restart {
+  margin: 0px 16px 0px 16px;
+  padding: 2px 15px 2px 9px;
+  border-radius: 25px;
+  font-size: 24px;
+  color: $black;
+}
+
+.poweroff {
+  background-color: $red;
+}
+.reboot {
+  background-color: $green;
+}
+.firmware {
+  background-color: $orange;
+}
+.exit {
+  background-color: $purple;
+}
+.restart {
+  background-color: $blue;
+}
+
+.fetch {
+    margin-top: 35px;
+    font-size: 15px;
+  border-radius: 16px;
+  border-style: solid;
+  border-width: 2;
+  border-color: $red;
+    background-color: $widget-background;
+    padding: 30px 55px 30px 55px;
+}
+
+.wm {
+  font-weight: bold;
+  color: $red;
+}
+
+.host {
+  font-weight: bold;
+  color: $purple;
+}
+
+.uptime {
+  font-weight: bold;
+  color: $orange;
+}
+
+.packages {
+  font-weight: bold;
+  color: $blue;
+}
+
+.kernal {
+  font-weight: bold;
+  color: $green;
+}
+
+.notification {
+	all: unset;
+    background-color: $widget-background;
+	padding: 20px 25px 20px 17px;
+    margin: 0px 0px 0px 0px;
+	border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $red;}
+
+.notification-header {
+	all: unset;
+    background-color: $widget-background;
+	padding: 20px 25px 20px 17px;
+    margin: 20px 0px 10px 0px;
+	border-radius: 12px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: $green;}
+
+.notification-icon {
+    color: $white;
+    font-size: 36px;
+    margin: 0px 20px 0px 10px;
+}
+
+.notification-appname {
+    font-size: 14px;
+    font-weight: bold;
+    color: $orange;
+}
+
+.notification-summary {
+    font-size: 18px;
+    font-weight: bold;
+    color: $white;
+}
+
+.notification-body {
+    font-size: 14px;
+    color: $white;
+}
+
+.notification-label {
+    font-size: 30px;
+    color: $blue;
+    margin: 0px 50px 0px 0px;
+}
+.notification-action {
+    font-size: 36px;
+    color: $white;
+    margin: 0px 0px 0px 20px;
+}

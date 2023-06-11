@@ -1,0 +1,88 @@
+/** {*/
+/*  --Rosewater: #f4dbd6;*/
+/*  --Flamingo: #f0c6c6;*/
+/*  --Pink:#f5bde6;*/
+/*  --Mauve:#c6a0f6;*/
+/*  --Red:#ed8796;*/
+/*  --Maroon:#ee99a0;*/
+/*  --Peach:#f5a97f;*/
+/*  --Yellow:#eed49f;*/
+/*  --Green:#a6da95;*/
+/*  --Teal:#8bd5ca;*/
+/*  --Sky:#91d7e3;*/
+/*  --Sapphire:#7dc4e4;*/
+/*  --Blue:#8aadf4;*/
+/*  --Lavender:#b7bdf8;*/
+/*  --Text:#cad3f5;*/
+/*  --Subtext1:#b8c0e0;*/
+/*  --Subtext0:#a5adcb;*/
+/*  --Overlay2:#939ab7;*/
+/*  --Overlay1:#8087a2;*/
+/*  --Overlay0:#6e738d;*/
+/*  --Surface2:#5b6078;*/
+/*  --Surface1:#494d64; 	*/
+/*  --Surface0:#363a4f;*/
+/*  --Base:#24273a;*/
+/*  --Mantle: #1e2030;*/
+/*  --Crust: #181926;*/
+  
+/*  --spice-main: var(--Base);*/
+/*  --spice-sidebar: var(--Peach);*/
+/*  --background-highlight: var(--Crust);*/
+/*  --background-elevated-base: var(--Mantle);*/
+/*  --background-elevated-highlight: var(--Crust);*/
+/*  --text-negative: var(--Red);*/
+/*  --text-warning: var(--Peach);*/
+/*  --text-base: var(--Text) !important;*/
+/*  --text-subdued: var(--Subtext0)*/
+/*  --text-announcement: var(--Blue);*/
+/*  --spice-button-active: var(--Sapphire);*/
+/*  --spice-sidebar-text: var(--Surface0);*/
+/*  --spice-button : var(--Yellow);*/
+/*  --spice-text: var(--Text);*/
+/*  --spice-notification: var(--Green);*/
+/*  --spice-notification-error: var(--Red);*/
+  
+/*}*/
+
+.Root__top-container {
+  background-color: var(--Peach);
+}
+
+
+/* Write your css here :D */
+@keyframes rotating { 
+  from { 
+    transform: rotate(0deg); 
+  } to { 
+    transform: rotate(360deg); 
+    
+  }} 
+.cover-art { 
+  animation: rotating 4s linear infinite; 
+  clip-path: circle(50% at 50% 50%);
+}
+
+#fsd-art {
+  border-radius: 50%;
+  animation: rotating 4s linear infinite;
+  outline: 3px solid rgba(0,0,0,0.4);
+  overflow: hidden;
+  
+}
+
+#fsd-art-image {
+  position: relative;
+}
+
+#fsd-art-inner {
+  position: absolute;
+  background-color: black !important;
+  width: 16% !important;
+  height: 16% !important;
+  border-radius: 50%;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  z-index: 5 !important;
+}

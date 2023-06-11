@@ -1,0 +1,26 @@
+<annotation>
+	<folder>Wallpapers</folder>
+	<filename>550055-steinsgate-makise.jpg</filename>
+	<path>/home/pp311/Custom/Wallpapers/550055-steinsgate-makise.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1920</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>makise</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>37</xmin>
+			<ymin>78</ymin>
+			<xmax>720</xmax>
+			<ymax>1080</ymax>
+		</bndbox>
+	</object>
+</annotation>

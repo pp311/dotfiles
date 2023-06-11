@@ -1,0 +1,43 @@
+statusbar_format = "%title - %artists"
+notify = true
+use_nerdfont = true
+flip_status_indicators = true
+shuffle = true
+repeat = "playlist"
+cover_max_scale = 2.0
+hide_display_names = true
+
+[track_format]
+left = "%title - %artists"
+center = "%album"
+right = "%saved %duration"
+
+[notification_format]
+title = "%title"
+body = "%artists"
+
+[keybindings]
+"n" = "next"
+"p" = "previous"
+"b" = "seek -5000"
+"f" = "seek +5000"
+"Space" = "playpause"
+
+[theme]
+# background = "#303446"
+primary = "#C6D0F5"
+secondary = "#E5C890"
+title = "#EF9F76"
+playing = "#EF9F76"
+playing_selected = "#EF9F76"
+playing_bg = "#303446"
+highlight = "#E5C890"
+highlight_bg = "#292C3C"
+error = "#E78284"
+error_bg = "#EEBEBE"
+statusbar = "#292C3C"
+statusbar_progress = "#EF9F76"
+statusbar_bg = "#EF9F76"
+cmdline = "#A6D189"
+cmdline_bg = "#292C3C"
+
