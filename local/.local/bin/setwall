@@ -1,0 +1,4 @@
+video=$((1 + $RANDOM % 10))
+killall mpvpaper
+
+mpvpaper -o "loop no-audio" "*" ~/Custom/Videos/${video}.mp4

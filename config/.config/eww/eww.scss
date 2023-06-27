@@ -162,8 +162,20 @@ tooltip label {
 .module_up {
     font-size: 24;
     color: $teal;
+  margin: 0px 16px 0px 0px;
+}
+.module_temperature {
+  font-size: 18;
+  color: $pink;
+  margin: 0px 0px 0px 0px;
+}
+
+.module_temp {
+    font-size: 24;
+    color: $pink;
   margin: 0px 5px 0px 0px;
 }
+
 
 
 .iconlauncher {

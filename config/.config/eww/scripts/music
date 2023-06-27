@@ -39,7 +39,7 @@ mpddir="$HOME/Music/iTunes Media"
 title() {
 title=$(playerctl --player=$Control metadata --format {{title}})
 [ -z "$title" ] && title="Play Something"
-echo "$title"
+echo "$title" | sed 's/\(.\{65\}\).*/\1.../'
 }
 
 ########################## Artist ##########################

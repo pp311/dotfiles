@@ -32,7 +32,7 @@ anchor=bottom-right
 
 background-color=#1e1e2e
 text-color=#d9e0ee
-border-color=#313244
+border-color=#89b4fa
 progress-color=over #89b4fa
 
 [urgency=low]
@@ -40,7 +40,7 @@ border-color=#89b4fa
 default-timeout=2000
 
 [urgency=normal]
-border-color=#89b4fa
+border-color=#f9e2af
 default-timeout=5000
 
 [urgency=high]
